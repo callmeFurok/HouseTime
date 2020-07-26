@@ -51,3 +51,10 @@
 #capacidad {
     display: none;
 }
+
+/*Esilos del carrusel del blog */
+
+.img-carusel{
+    max-height: 70vh;
+    object-fit: cover;
+}
