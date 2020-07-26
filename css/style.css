@@ -1,13 +1,35 @@
+.gato img {
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.perro img {
+    max-height: 70vh;
+}
+
+.carousel2 {
+    color: black;
+    font-weight: bold;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+
+#footer a {
+    color: #fff;
+}
+
+#map {
+    height: 15rem;
+}
+.coordenadas {
+  display: none;
+}
 .footer{
     background-color: gray;
 }
 
-.main-col--img{
-    width: 100%;
-    height: 100px;
-}
-
-/*Estilos de la busqueda */
 #nombre {
     display: none;
 }
