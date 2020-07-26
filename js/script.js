@@ -1,4 +1,5 @@
 $(function() {
+    
     let buscar = document.getElementById('buscar');
 
     buscar.addEventListener('click', function() {
@@ -51,6 +52,7 @@ $(function() {
             document.getElementById("nombre").style.display = "none";
         }
     });
+
     let latitud = document.getElementById('latitud');
     let longitud = document.getElementById('longitud');
 
@@ -60,6 +62,5 @@ $(function() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([parseFloat(latitud.value), parseFloat(longitud.value)]).addTo(map)
-        .openPopup();
+    L.marker([parseFloat(latitud.value), parseFloat(longitud.value)]).addTo(map).openPopup();
 });
