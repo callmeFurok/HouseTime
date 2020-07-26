@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HouseTime Promociones</title>
+  </head>
+  <body>
+      <!--Header y Anuncios-->
+      <header class="header">
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h4>House Time</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anuncios.html">Anuncios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contac.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <!--Titulo de las Promociones-->
+      <main class="main">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <h2>Conoce las mejores ofertas</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <select id="buscar" class="form-control">
+                                    <option selected>Buscar por...</option>
+                                    <option value="nombre">Nombre</option>
+                                    <option value="precio">Precio</option>
+                                    <option value="fechas">Fechas</option>
+                                    <option value="ubicacion">Ubicacion</option>
+                                    <option value="servicios">Servicios</option>
+                                    <option value="capacidad">Capacidad</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-6">
+                                <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#modalCotizar">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="nombre">
+                        <div class="row">
+                            <div class="col">
+                                <form class="form-inline mr-auto">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Nombre" aria-label="Search">
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="precio">
+                        <div class="row">
+                            <div class="col">
+                                <form class="form-inline mr-auto">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Precio" aria-label="Search">
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="fecha">
+                        <div class="row">
+                            <div class="col">
+                                <form class="form-inline mr-auto">
+                                    <input class="form-control mr-sm-2" type="date" placeholder="Fecha" aria-label="Search">
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="ubicacion">
+                        <div class="row">
+                            <div class="col">
+                                <form class="form-inline mr-auto">
+                                    <select name="ubicacion" id="" class="form-control mr-sm-2">
+                                        <option value="">Selecciona una Ubicacion</option>
+                                    </select>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="servicios">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Piscina</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Parqueadero</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Wifi</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">TV-Cable</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Sauna</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Hidromasaje</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Room Service</label>
+                                    </div>
+                                    <div class="form-row mt-2">
+                                        <div class="col">
+                                            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container mt-4" id="capacidad">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-12 col-md-3">
+                                            <input type="text" class="form-control" placeholder="# de Adultos">
+                                        </div>
+                                        <div class="form-group col-12 col-md-3">
+                                            <input type="text" class="form-control" placeholder="# de Niños">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+             <div class="row mt-2">
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="alert alert-danger" role="alert">
+                            Oferta especial: 
+                        </div>
+                        <a href="anuncio_detalle.html" class="btn btn-primary btn-block">Arrendar</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="alert alert-danger" role="alert">
+                          Oferta especial: 
+                      </div>
+                      <form method="POST" action="ancio_detalle">
+                        <input type="text" class="form-control d-none" id="id-anuncio" value="5">
+                        <a href="anuncio_detalle.html" class="btn btn-block btn-primary">Aquilar</a>
+
+                      </form>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="alert alert-danger" role="alert">
+                            Oferta especial: 
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="alert alert-danger" role="alert">
+                          Oferta especial: 
+                      </div>
+                      <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="alert alert-danger" role="alert">
+                          Oferta especial: 
+                      </div>
+                      <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="alert alert-danger" role="alert">
+                            Oferta especial: 
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="alert alert-danger" role="alert">
+                          Oferta especial: 
+                      </div>
+                      <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="alert alert-danger" role="alert">
+                          Oferta especial: 
+                      </div>
+                      <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="img/img-departament/dep-uio-1.jpg" class="card-img-top" alt="Departamento">
+
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="alert alert-danger" role="alert">
+                            Oferta especial: 
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Arrendar</a>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <footer class="footer pb-4 pt-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <a href="#"> Contactanos</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#">Quienes somos</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#">Anuncios</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <!-- Modal Arrendar -->
+      <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Arrendar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Ci">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="# Celular">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="# de Adultos">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="# de Niños">
+                            </div>
+                        </div>
+                        <div class="alert alert-warning mt-2" role="alert">
+                            Su total es:
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success btn-block">Comprar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Arrendar -->
+
+    <!-- Modal Cotizar -->
+    <div class="modal fade" id="modalCotizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Arrendar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Ci">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Correo">
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Piscina</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Parqueadero</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Wifi</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">TV-Cable</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Sauna</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Hidromasaje</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Room Service</label>
+                        </div>
+                        <div class="form-row mt-2">
+                            <div class="col">
+                                <button type="button" class="btn btn-success btn-block">Cotizar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Cotizar -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  
+</body>
+</html>
