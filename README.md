@@ -10,4 +10,4 @@ Sera un proyecto donde nos inventaremos el agua tibia con tal de que nos salga t
 3. Daniel Dominguez
 4. Joel Estacio
 
-:tw-1f412: :tw-1f412: :tw-1f412:
+:tw-1f412:
