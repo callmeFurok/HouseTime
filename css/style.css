@@ -1,0 +1,33 @@
+.footer{
+    background-color: gray;
+}
+
+.main-col--img{
+    width: 100%;
+    height: 100px;
+}
+
+/*Estilos de la busqueda */
+#nombre {
+    display: none;
+}
+
+#precio {
+    display: none;
+}
+
+#fecha {
+    display: none;
+}
+
+#ubicacion {
+    display: none;
+}
+
+#servicios {
+    display: none;
+}
+
+#capacidad {
+    display: none;
+}
