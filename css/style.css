@@ -43,3 +43,7 @@
 #capacidad {
     display: none;
 }
+
+#map {
+    height: 15rem;
+}
