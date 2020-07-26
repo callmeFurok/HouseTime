@@ -47,3 +47,7 @@
 #map {
     height: 15rem;
 }
+
+.coordenadas {
+    display: none;
+}
