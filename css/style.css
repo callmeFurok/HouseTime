@@ -19,3 +19,27 @@
 #footer a {
     color: #fff;
 }
+
+#nombre {
+    display: none;
+}
+
+#precio {
+    display: none;
+}
+
+#fecha {
+    display: none;
+}
+
+#ubicacion {
+    display: none;
+}
+
+#servicios {
+    display: none;
+}
+
+#capacidad {
+    display: none;
+}
