@@ -61,7 +61,7 @@ $(function() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([51.5, -0.09]).addTo(map)
+    L.marker([parseFloat(latitud.value), parseFloat(longitud.value)]).addTo(map)
         .openPopup();
 
 });
