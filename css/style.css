@@ -23,11 +23,9 @@
 #map {
     height: 15rem;
 }
+
 .coordenadas {
-  display: none;
-}
-.footer{
-    background-color: gray;
+    display: none;
 }
 
 #nombre {
