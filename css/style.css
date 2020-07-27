@@ -52,9 +52,18 @@
     display: none;
 }
 
+
 /*Esilos del carrusel del blog */
 
-.img-carusel{
+.img-carusel {
     max-height: 70vh;
     object-fit: cover;
+}
+
+
+/*Valores */
+
+.valores {
+    color: orangered;
+    font-size: 4rem;
 }
