@@ -1,5 +1,9 @@
 $(function() {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8490e74876bd4d6f8166c88abad0206c1ec5bb26
     let buscar = document.getElementById('buscar');
 
     buscar.addEventListener('click', function() {
@@ -52,6 +56,7 @@ $(function() {
             document.getElementById("nombre").style.display = "none";
         }
     });
+<<<<<<< HEAD
 
     let latitud = document.getElementById('latitud');
     let longitud = document.getElementById('longitud');
@@ -64,3 +69,7 @@ $(function() {
 
     L.marker([parseFloat(latitud.value), parseFloat(longitud.value)]).addTo(map).openPopup();
 });
+=======
+
+});
+>>>>>>> 8490e74876bd4d6f8166c88abad0206c1ec5bb26
