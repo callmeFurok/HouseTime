@@ -56,17 +56,11 @@
 /*Esilos del carrusel del blog */
 
 
-/*Modificamos la imagen del card*/
-.card-body img {
-    min-height: 250px;
+/*Modificamos la imagen del carousel*/
+.carousel-item img {
+    height: 250px;
     object-fit: cover;
 }
-
-.img-carusel {
-    max-height: 70vh;
-    object-fit: cover;
-}
-
 
 /*Valores */
 
